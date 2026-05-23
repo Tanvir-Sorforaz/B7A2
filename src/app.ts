@@ -3,6 +3,7 @@ import { StatusCodes } from "http-status-codes";
 import sendResponse from "./utility/sendResponse";
 import authRoutes from "./modules/auth/auth.route";
 import issueRoutes from "./modules/issues/issues.route";
+import adminRoutes from "./modules/admin/admin.route";
 import globalErrorHandler from "./middleware/globalErrorHandler";
 
 const app = express();
@@ -20,6 +21,7 @@ app.get("/", (_req, res) => {
 
 app.use("/api/auth", authRoutes);
 app.use("/api/issues", issueRoutes);
+app.use("/api/admin", adminRoutes);
 
 app.use((req, res) => {
   sendResponse(res, {
