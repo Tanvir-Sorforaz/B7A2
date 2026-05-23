@@ -1,7 +1,6 @@
-import config  from "./config/index";
-import express from "express"
+import config from "./config/index";
 import { initDb } from "./db";
-const app = express()
+import app from "./app";
 const port = Number(config.port ?? 3000);
 
 const start = async () => {
