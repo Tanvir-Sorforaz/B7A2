@@ -1,6 +1,7 @@
 # DevPulse
 
-Minimal Express + TypeScript API for user auth and issue tracking with PostgreSQL. It auto-creates the required tables on startup.
+Internal Tech Issue & Feature Tracker
+A collaborative platform for software teams to report bugs, suggest features, and coordinate resolutions.
 
 ## Live Link
 
